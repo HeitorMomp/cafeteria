@@ -1,3 +1,9 @@
+/* importando as fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Danfo&display=swap');
+
+
+
+
 /* Zerar a margens etodos os elementos da página. Margens internas e externas */
 
 /* Vamos adicionar uma imagem ao fundo do header */
@@ -6,7 +12,65 @@
     padding:0px;
     box-sizing: border-box;
 }
+/* Vamos adicioanr uma imagem ao fundo */
 header{
-    background-image: url("../img/cafeteria3.jpg");
-    height: 500px;
+    background-color: blue;
+    background-image: url("../img/carolina-marinelli-PkbyxvkGWcU-unsplash.jpg");
+    /* Ajustar o tamanho da imagem em 100% de largura */
+    background-size: 100%;
+    /* Ajustar aposição da imagem em x e y */
+    background-position: 0px 0px;
+    height: 400px;
+    padding:30px;
+
+}
+nav{
+/* tornando o conteúdo da nav flexível. Isso permite que os elementos fiquem um do lado do outro */
+    display: flex;
+    /* alinhamento vertial dos elementos que estão no nav */
+align-items: center;
+}
+h1{
+    /* mudar a cor da letra */
+    color: darkolivegreen;
+    /* Alterar o tipo da letra */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    /* Alterar o tamanho da caixa (alta ou baixa) */
+    text-transform: uppercase;
+    margin-right: 150px;
+}
+ul{
+    /* retirar o marcador da lista */
+    list-style: none;
+}
+/* e coloquei header ul li, pq eu idiquei o caminho específico de qual eu queria alterar o display */
+header ul li{                                        
+
+    /* Vamos ajustar a disposição(display) dos itens da lista me formato de linha */
+    display:inline-block;
+    margin: left 5px;
+    margin: right 5px;
+    padding:5px;
+}
+header ul li:hover{
+    background-color: lime;
+}
+header ul li a{
+    color: #0097a7;
+    /* Vamos retirar o underline (sublinhado) */
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header h2{
+color:white;
+text-align: center;
+
+margin-top: 100px;
+font-family: "Danfo", serif;
+font-size: 20pt;
+font-weight: 100;
+text-shadow: 1px 0px 5px rgb(47, 0, 255)
+;
+
 }
