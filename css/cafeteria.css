@@ -1,6 +1,6 @@
 /* importando as fontes do google */
 @import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Danfo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
 
 
 
@@ -63,6 +63,8 @@ header ul li a{
     font-family: Arial, Helvetica, sans-serif;
 }
 header h2{
+    padding: 30px;
+    background-color: rgba(255, 0, 0, 0.3);
 color:white;
 text-align: center;
 
@@ -73,4 +75,29 @@ font-weight: 100;
 text-shadow: 1px 0px 5px rgb(47, 0, 255)
 ;
 
+}
+header p{
+    font-family: "Seymour One", sans-serif;
+    font-size: 15pt;
+        color: gold;
+text-align: center;
+margin-left: 250px;
+margin-right: 250px;
+text-shadow: 10px 10px 6px red;
+}
+footer{
+    background-color: rgb(185, 200, 100);
+    display: flex;
+    justify-content:space-between;
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom:  100px;
+    font-family: arial;
+    font-size: 15pt;
+    color: #fff;
+}
+footer #rede li{
+/* colocar as redes (quando se usa rede tem que ter o #) em linha */
+display: inline-block;
+margin-right:  10px;
 }
