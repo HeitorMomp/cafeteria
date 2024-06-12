@@ -12,7 +12,10 @@
     padding:0px;
     box-sizing: border-box;
 }
-/* Vamos adicioanr uma imagem ao fundo */
+html{
+    scroll-behavior:smooth;
+}
+    /* Vamos adicioanr uma imagem ao fundo */
 header{
     background-color: blue;
     background-image: url("../img/carolina-marinelli-PkbyxvkGWcU-unsplash.jpg");
@@ -142,3 +145,78 @@ main #imghome img:hover{
 main #imghome{
     text-align: center;
 }
+/* -------------------- formatação da página cardapio -------------- */
+main #categoriacardapio{
+    width: 80%;
+    /* vamos centralizar a caixa categoria
+    modificando a margem da esquerda e da 
+    direita como auto de automático */
+    margin-left: auto;
+    margin-right: auto;
+    /* aplicar a disposição flex para 
+    deixar as imagens uma ao lado da outra */
+    display: flex;
+    /* alinhar o conteudo ao centro */
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.itemcardapio img{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    display: block;
+    box-shadow: 0px 0px 10px red;
+    margin-bottom: 5px;
+   
+}
+
+.itemcardapio{
+    text-align: center;
+    margin:5px
+}
+
+.itemcardapio a{
+    font-family: arial;
+    text-decoration: none;
+    color:black;
+}
+
+/* se vc tem linha q não vai reutilizar, ai vc usa .linha */
+.linha{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+.item{
+/* divide o 100% do espaço na página e divide pelo número de elementos disponíveis na linha que vão ser divididos, 
+mas  como deu quebrado vc coloca um número um pouco menor */
+width: 32%;
+display: flex;
+margin:10px;
+
+}
+.item img{
+    width:150px;
+    height:150px;
+    border-radius: 10px;
+
+}
+    .item div h3{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 12pt;
+       margin:5px;
+
+    }
+    .item div p{
+        font-family:Arial, Helvetica, sans-serif;
+        margin:5px;
+        font-size:  10pt;
+        line-height: 15pt;
+    }
+    #cafes h2{
+    font-size:  40pt;
+    margin-left:200px;
+
+    }
